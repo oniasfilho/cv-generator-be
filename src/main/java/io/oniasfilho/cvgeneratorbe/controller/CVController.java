@@ -14,7 +14,7 @@ public class CVController {
         this.service = service;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://cv-generator.herokuapp.com/")
     @GetMapping("/cv")
     public CV getCV(){
         return service.getCV();
